@@ -1,0 +1,75 @@
+@font-face{
+    font-family: Mont;
+    src: url(../Font/Montserrat-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: League;
+    src: url(../Font/LeagueSpartan-Bold.otf);
+}
+
+.heading{
+    font-family: Mont;
+    color: white;
+}
+
+.p{
+    font-family: Mont;
+    color: white;
+    font-size:351%;
+
+}
+
+/*TypeWriter Effect*/
+.name{
+   font-size:400%;
+   overflow: hidden; /* Ensures the content is not revealed until the animation */
+   border-right: .15em solid rgb(251, 251, 250); /* The typwriter cursor */
+   white-space: nowrap; /* Keeps the content on a single line */ 
+   animation: 
+      typing 3.5s steps(70, end),
+      blink-caret .50s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(251, 251, 250); }
+  }
+/*TypeWriter Effect*/
+.body{
+    background-color: black;
+    font-family: Mont;
+    color: white;
+}
+
+/*Navigation*/
+.nav-bar{
+    margin-left: 60%;
+    
+}
+
+.nav-items{
+    text-decoration: none;
+    color: white;
+    font-family: Mont;
+}
+/*Navigation*/
+
+/*Buttons*/
+.button{
+    font-size: large;
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    transition: 341ms;
+    te
+}
+/*Buttons*/
