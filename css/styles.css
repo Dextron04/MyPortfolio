@@ -13,46 +13,60 @@
     color: white;
 }
 
-.p{
-    font-family: Mont;
-    color: white;
-    font-size:351%;
 
-}
-
-/*TypeWriter Effect*/
-.name{
-   font-size:400%;
-   overflow: hidden; /* Ensures the content is not revealed until the animation */
-   border-right: .15em solid rgb(251, 251, 250); /* The typwriter cursor */
-   white-space: nowrap; /* Keeps the content on a single line */ 
-   animation: 
-      typing 3.5s steps(70, end),
-      blink-caret .50s step-end infinite;
-}
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(251, 251, 250); }
-  }
-/*TypeWriter Effect*/
 .body{
     background-color: black;
     font-family: Mont;
     color: white;
 }
 
+.p{
+    font-family: Mont;
+    color: white;
+    font-size:351%;
+    margin-top: 222px;
+    margin-bottom:0px;
+
+}
+
+/*TypeWriter Effect*/
+.name{
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    font-size: 4.6rem;
+    width: 0;
+    animation: 
+       typing 1s steps(20, end) 
+       forwards, blinking 0.8s infinite;
+ }
+
+ .container{
+     display: inline-block;
+ }
+ 
+ @keyframes typing {
+     from { width: 0 }
+     to { width: 100% }
+   }
+ 
+@keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: white; }
+  }
+ /*TypeWriter Effect*/
+
 /*Navigation*/
 .nav-bar{
-    margin-left: 60%;
-    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
 .nav-items{
+    display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     color: white;
     font-family: Mont;
@@ -70,6 +84,5 @@
     background-color: white;
     color: black;
     transition: 341ms;
-    te
 }
 /*Buttons*/
